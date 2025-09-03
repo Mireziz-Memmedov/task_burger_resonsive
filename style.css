@@ -14,6 +14,12 @@ section {
   padding: 80px 0;
 }
 
+header {
+  padding: 25px 0;
+}
+header .menu .imgbox {
+  width: 40px;
+}
 header .menu nav a {
   color: #7e7878;
   margin-right: 30px;
@@ -22,8 +28,27 @@ header .menu nav a {
 header .menu nav .home-color {
   color: #74bebc;
 }
-header .imgbox {
-  width: 40px;
+header .menu .icon {
+  padding: 10px;
+  background-color: #39b8c1;
+  border-radius: 10px;
+  background-image: url(Assets/15.svg);
+}
+header .menu .icon i {
+  color: #ffffff;
+}
+header .menu .minimenu {
+  display: none;
+  background-color: #e9e7e7;
+  botder-radius: 10px;
+}
+@media (max-width: 992px) {
+  header .menu .minimenu {
+    display: block;
+  }
+  header .menu nav {
+    display: none;
+  }
 }
 
 #food {
