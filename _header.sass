@@ -1,6 +1,9 @@
 header
     padding: 25px 0
     .menu
+        display: flex
+        justify-content: space-between
+        align-items: center
         .imgbox
             width: 40px
         nav
@@ -10,25 +13,30 @@ header
                 font-size: 22px
             .home-color
                 color: #74bebc
-        .icon
-            display: none
-            padding: 10px
-            background-color: #39b8c1ff
-            border-radius: 10px
-            background-image: url(Assets/15.svg)
-            i
-                color: #ffffff
         .minimenu
-            display: none
-            background-color: #e9e7e7ff
-            botder-radius: 10px
+            display: flex
+            .icon
+                display: none
+                padding: 10px
+                background-color: #39b8c1ff
+                border-radius: 5px
+                background-image: url(Assets/15.svg)
+                i
+                    color: #ffffffff
+            .btn
+                display: none
+                background-color: #e9e7e7ff
+                botder-radius: 5px
+                margin-left: 10px
     @media ( max-width: 992px )
         .menu
             .minimenu
-                display: block
+                .btn
+                    display: block
             nav
                 display: none
-    @@media ( max-width: 576px )
+    @media ( max-width: 576px )
         .menu
-            .icon
-                display: block
+            .minimenu
+                .icon
+                    display: block
