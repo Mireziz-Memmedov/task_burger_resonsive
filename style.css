@@ -86,12 +86,17 @@ header .menu .minimenu .btn:hover {
 }
 
 #food {
-  background-color: #f4fafb;
+  background-image: url(Assets/16.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 #food .box h1 {
   font-weight: 700;
   font-size: 60px;
-  margin-right: 80px;
+  max-width: 500px;
+}
+#food .box h1:hover {
+  cursor: text;
 }
 #food .box span {
   color: #37b7c3;
@@ -102,19 +107,52 @@ header .menu .minimenu .btn:hover {
   margin: 25px 75px 50px 0;
   line-height: 1.3;
 }
+#food .box h5:hover {
+  cursor: text;
+}
 #food .box .btn {
+  background-image: url(Assets/15.svg);
   padding: 13px 30px;
   font-size: 20px;
   border-radius: 5px;
   background-color: #38b6c1;
   color: white;
 }
+#food .box .btn h2:hover {
+  cursor: pointer;
+}
 #food .box .imgbox {
   width: 120px;
   margin: 20px 0 10px;
 }
+#food .box .imgbox img:hover {
+  cursor: pointer;
+}
 #food .box h4 {
   font-size: 20px;
+}
+#food .box h4:hover {
+  cursor: text;
+}
+@media (max-width: 992px) {
+  #food .box {
+    text-align: center;
+  }
+  #food .box .imgbox {
+    width: auto;
+  }
+  #food .box .imgbox img {
+    width: 100px;
+  }
+  #food .box h1 {
+    max-width: none;
+  }
+  #food .box h5 {
+    margin-right: 0;
+  }
+  #food .box h4 {
+    margin-bottom: 80px;
+  }
 }
 
 #products {
