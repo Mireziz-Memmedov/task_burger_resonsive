@@ -6,15 +6,21 @@ header
         align-items: center
         .imgbox
             width: 40px
+            img
+                &:hover
+                    cursor: pointer
         nav
             a
+                text-decoration: underline
                 color: #7e7878
-                margin-right: 30px
+                margin-left: 30px
                 font-size: 22px
+                &:hover
+                    cursor: pointer
             .home-color
                 color: #74bebc
         .minimenu
-            display: flex
+            display: none
             .icon
                 display: none
                 padding: 10px
@@ -23,14 +29,19 @@ header
                 background-image: url(Assets/15.svg)
                 i
                     color: #ffffffff
+                    &:hover
+                        cursor: pointer
             .btn
                 display: none
                 background-color: #e9e7e7ff
                 botder-radius: 5px
                 margin-left: 10px
+                &:hover
+                    cursor: pointer
     @media ( max-width: 992px )
         .menu
             .minimenu
+                display: block
                 .btn
                     display: block
             nav
@@ -38,5 +49,6 @@ header
     @media ( max-width: 576px )
         .menu
             .minimenu
+                display: flex
                 .icon
                     display: block

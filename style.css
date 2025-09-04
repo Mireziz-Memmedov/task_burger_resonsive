@@ -25,16 +25,23 @@ header .menu {
 header .menu .imgbox {
   width: 40px;
 }
+header .menu .imgbox img:hover {
+  cursor: pointer;
+}
 header .menu nav a {
+  text-decoration: underline;
   color: #7e7878;
-  margin-right: 30px;
+  margin-left: 30px;
   font-size: 22px;
+}
+header .menu nav a:hover {
+  cursor: pointer;
 }
 header .menu nav .home-color {
   color: #74bebc;
 }
 header .menu .minimenu {
-  display: flex;
+  display: none;
 }
 header .menu .minimenu .icon {
   display: none;
@@ -46,13 +53,22 @@ header .menu .minimenu .icon {
 header .menu .minimenu .icon i {
   color: white;
 }
+header .menu .minimenu .icon i:hover {
+  cursor: pointer;
+}
 header .menu .minimenu .btn {
   display: none;
   background-color: #e9e7e7;
   botder-radius: 5px;
   margin-left: 10px;
 }
+header .menu .minimenu .btn:hover {
+  cursor: pointer;
+}
 @media (max-width: 992px) {
+  header .menu .minimenu {
+    display: block;
+  }
   header .menu .minimenu .btn {
     display: block;
   }
@@ -61,6 +77,9 @@ header .menu .minimenu .btn {
   }
 }
 @media (max-width: 576px) {
+  header .menu .minimenu {
+    display: flex;
+  }
   header .menu .minimenu .icon {
     display: block;
   }
