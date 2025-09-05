@@ -157,12 +157,17 @@ header .menu .minimenu .btn:hover {
 
 #products {
   background-color: #f1f8f9;
+  background-image: url(Assets/32.png);
+  background-repeat: no-repeat;
 }
 #products .textbox h1 {
   color: #36b3bd;
   font-weight: 700;
   font-size: 60px;
-  width: 400px;
+  max-width: 400px;
+}
+#products .textbox h1:hover {
+  cursor: text;
 }
 #products .textbox h5 {
   font-size: 20px;
@@ -170,15 +175,39 @@ header .menu .minimenu .btn:hover {
   margin: 25px 75px 50px 0;
   line-height: 1.3;
 }
+#products .textbox h5:hover {
+  cursor: text;
+}
 #products .textbox .btn {
+  background-image: url(Assets/15.svg);
   padding: 13px 30px;
   background-color: #38b6c1;
   color: white;
   font-size: 20px;
   border-radius: 5px;
 }
+#products .textbox .btn h2:hover {
+  cursor: pointer;
+}
 #products .imgbox {
   width: 520px;
+}
+@media (max-width: 992px) {
+  #products .textbox {
+    text-align: center;
+  }
+  #products .textbox h1 {
+    max-width: none;
+  }
+  #products .textbox h5 {
+    margin-right: 0;
+  }
+  #products .textbox .btn {
+    margin-bottom: 50px;
+  }
+  #products .imgbox {
+    width: auto;
+  }
 }
 
 #works h1 {
