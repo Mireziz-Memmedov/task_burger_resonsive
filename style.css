@@ -265,15 +265,22 @@ header .menu .minimenu .btn:hover {
   font-size: 60px;
   color: #3cc1d8;
 }
+#menu .textbox h1:hover {
+  cursor: text;
+}
 #menu .textbox h4 {
   font-size: 20px;
   color: #6c7480;
   margin: 20px 0;
   line-height: 1.2;
 }
+#menu .textbox h4:hover {
+  cursor: text;
+}
 #menu .textbox h4 span {
   color: #3cc1d8;
   text-decoration-line: underline;
+  cursor: pointer;
 }
 #menu .btn {
   font-size: 18px;
@@ -281,6 +288,9 @@ header .menu .minimenu .btn:hover {
   padding: 15px 46px;
   margin: 0 20px;
   border-radius: 5px;
+}
+#menu .btn h3 {
+  cursor: pointer;
 }
 #menu .bgc {
   background-color: #3cc1d8;
@@ -305,15 +315,24 @@ header .menu .minimenu .btn:hover {
   font-size: 22px;
   font-weight: 700;
 }
+#menu .box .textbox .minibox h2:hover {
+  cursor: text;
+}
 #menu .box .textbox .minibox h5 {
   color: #3cc1d8;
   font-size: 18px;
+}
+#menu .box .textbox .minibox h5:hover {
+  cursor: text;
 }
 #menu .box .textbox p {
   margin: 15px 0;
   font-size: 18px;
   line-height: 1.2;
   color: rgba(35, 47, 66, 0.5215686275);
+}
+#menu .box .textbox p:hover {
+  cursor: text;
 }
 #menu .box .textbox .add {
   display: flex;
@@ -331,6 +350,15 @@ header .menu .minimenu .btn:hover {
 #menu .big {
   padding: 17px 53px;
   margin-top: 50px;
+}
+@media (max-width: 576px) {
+  #menu .toy {
+    display: flex;
+    flex-direction: column;
+  }
+  #menu .toy .btn {
+    margin-bottom: 10px;
+  }
 }
 
 #checkout .imgbox {

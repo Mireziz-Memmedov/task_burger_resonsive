@@ -6,20 +6,27 @@
             font-weight: 700
             font-size: 60px
             color: #3cc1d8
+            &:hover
+                cursor: text
         h4
             font-size: 20px
             color: #6c7480
             margin: 20px 0
             line-height: 1.2
+            &:hover
+                cursor: text
             span
                 color: #3cc1d8
                 text-decoration-line: underline
+                cursor: pointer
     .btn
         font-size: 18px
         border: 0.5px solid #bdbdbd
         padding: 15px 46px
         margin: 0 20px
         border-radius: 5px
+        h3
+            cursor: pointer
     .bgc
         background-color: #3cc1d8
         color: #ffff
@@ -39,14 +46,20 @@
                 h2
                     font-size: 22px
                     font-weight: 700
+                    &:hover
+                        cursor: text
                 h5
                     color: #3cc1d8
                     font-size: 18px
+                    &:hover
+                        cursor: text
             p
                 margin: 15px 0
                 font-size: 18px
                 line-height: 1.2
                 color: #232f4285
+                &:hover
+                    cursor: text
             .add
                 display: flex
                 input
@@ -60,3 +73,9 @@
     .big
         padding: 17px 53px
         margin-top: 50px
+    @media ( max-width: 576px )
+        .toy
+            display: flex
+            flex-direction: column
+            .btn
+                margin-bottom: 10px
