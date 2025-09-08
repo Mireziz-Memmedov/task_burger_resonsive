@@ -295,6 +295,7 @@ header .menu .minimenu .btn:hover {
 #menu .bgc {
   background-color: #3cc1d8;
   color: white;
+  background-image: url(Assets/15.svg);
 }
 #menu .box {
   display: flex;
@@ -405,11 +406,15 @@ header .menu .minimenu .btn:hover {
   background-color: #38b6c1;
   padding: 13px 34px;
   border-radius: 5px;
+  background-image: url(Assets/15.svg);
 }
 #checkout .textbox .btn h2:hover {
   cursor: pointer;
 }
 @media (max-width: 990px) {
+  #checkout .imgbox {
+    width: 100%;
+  }
   #checkout .textbox {
     text-align: center;
   }
@@ -420,11 +425,17 @@ header .menu .minimenu .btn:hover {
 
 #store {
   background-color: #f1f8f9;
+  background-image: url(Assets/32.png);
+  background-repeat: no-repeat;
+  background-position: 120px center;
 }
 #store .textbox h1 {
   font-weight: 700;
   font-size: 65px;
   color: #36b3bd;
+}
+#store .textbox h1:hover {
+  cursor: text;
 }
 #store .textbox h5 {
   font-size: 20px;
@@ -432,33 +443,80 @@ header .menu .minimenu .btn:hover {
   margin: 25px 75px 50px 0;
   line-height: 1.3;
 }
+#store .textbox h5:hover {
+  cursor: text;
+}
 #store .textbox .btn {
   font-size: 20px;
   color: white;
   background-color: #38b6c1;
   padding: 13px 34px;
+  background-image: url(Assets/15.svg);
+}
+#store .textbox .btn h2:hover {
+  cursor: pointer;
 }
 #store .imgbox {
   width: 520px;
 }
+@media (max-width: 990px) {
+  #store {
+    background-size: 300px 300px;
+    background-position: top center;
+  }
+  #store .imgbox {
+    width: 100%;
+  }
+  #store .textbox {
+    text-align: center;
+  }
+  #store .textbox h5 {
+    margin: 25px 0;
+  }
+  #store .textbox .btn {
+    margin-bottom: 20px;
+  }
+  #store .textbox h1 {
+    font-size: 45px;
+  }
+}
 
-#business .textbox h1 {
+#business .box {
+  width: 100%;
+  height: 100%;
+  background-image: url(Assets/33.svg);
+  background-color: #35b6c1;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+#business .box .textbox h1 {
   font-size: 60px;
   font-weight: 700;
   color: white;
   margin: 0 70px 0 40px;
   line-height: 1.1;
 }
-#business .textbox span {
+#business .box .textbox h1:hover {
+  cursor: text;
+}
+#business .box .textbox span {
   color: rgba(36, 102, 114, 0.5137254902);
 }
-#business .textbox .btn {
+#business .box .textbox .btn {
   font-size: 22px;
   color: #38b6c1;
   background-color: white;
   padding: 10px 30px;
   margin: 30px 0 0 40px;
 }
-#business .bgc {
-  background-color: #35b6c1;
+#business .box .textbox .btn h2:hover {
+  cursor: pointer;
+}
+@media (max-width: 990px) {
+  #business .box {
+    margin-top: 20px;
+  }
+  #business .box .textbox h1 {
+    font-size: 35px;
+  }
 }/*# sourceMappingURL=style.css.map */

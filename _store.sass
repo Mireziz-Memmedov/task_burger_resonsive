@@ -1,19 +1,43 @@
 #store
     background-color: #f1f8f9
+    background-image: url(Assets/32.png)
+    background-repeat: no-repeat
+    background-position: 120px center
     .textbox
         h1
             font-weight: 700
             font-size: 65px
             color: #36b3bd
+            &:hover
+                cursor: text
         h5
             font-size: 20px
             color: #676f8b
             margin: 25px 75px 50px 0
             line-height: 1.3
+            &:hover
+                cursor: text
         .btn
             font-size: 20px
             color: #ffff
             background-color: #38b6c1
             padding: 13px 34px
+            background-image: url(Assets/15.svg)
+            h2
+                &:hover
+                    cursor: pointer
     .imgbox
         width: 520px
+    @media ( max-width: 990px )
+        background-size: 300px 300px
+        background-position: top center
+        .imgbox
+            width: 100%
+        .textbox
+            text-align: center
+            h5
+                margin: 25px 0
+            .btn
+                margin-bottom: 20px
+            h1
+                font-size: 45px
