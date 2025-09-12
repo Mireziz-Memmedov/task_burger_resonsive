@@ -256,6 +256,11 @@ header .menu .minimenu .btn:hover {
   }
 }
 
+#menu {
+  background-image: url(Assets/20.svg);
+  background-repeat: no-repeat;
+  background-position: center 200px;
+}
 #menu .textbox {
   width: 500px;
   text-align: center;
@@ -358,7 +363,12 @@ header .menu .minimenu .btn:hover {
   padding: 17px 53px;
   margin-top: 50px;
 }
-@media (max-width: 576px) {
+@media (min-width: 250px) and (max-width: 992px) {
+  #menu {
+    background-color: #f7faf9;
+  }
+}
+@media (min-width: 250px) and (max-width: 576px) {
   #menu .media {
     display: flex;
     flex-direction: column;
@@ -424,10 +434,9 @@ header .menu .minimenu .btn:hover {
 }
 
 #store {
-  background-color: #f1f8f9;
-  background-image: url(Assets/32.png);
-  background-repeat: no-repeat;
-  background-position: 120px center;
+  background-image: url(Assets/32.png), url(Assets/20.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 120px center, center center;
 }
 #store .textbox h1 {
   font-weight: 700;
@@ -461,6 +470,7 @@ header .menu .minimenu .btn:hover {
 }
 @media (max-width: 990px) {
   #store {
+    background-color: #f7faf9;
     background-size: 300px 300px;
     background-position: top center;
   }
@@ -512,11 +522,25 @@ header .menu .minimenu .btn:hover {
 #business .box .textbox .btn h2:hover {
   cursor: pointer;
 }
-@media (max-width: 990px) {
+@media (min-width: 576px) and (max-width: 992px) {
   #business .box {
+    min-height: 40vh;
     margin-top: 20px;
   }
   #business .box .textbox h1 {
     font-size: 35px;
+  }
+}
+@media (min-width: 300px) and (max-width: 576px) {
+  #business .box {
+    min-height: 25vh;
+    margin-top: 20px;
+  }
+  #business .box .textbox h1 {
+    font-size: 35px;
+  }
+  #business .box .textbox .btn {
+    padding: 5px 20px;
+    font-size: 18px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,4 +1,7 @@
 #menu
+    background-image: url(Assets/20.svg)
+    background-repeat: no-repeat
+    background-position: center 200px 
     .textbox
         width: 500px
         text-align: center
@@ -78,7 +81,9 @@
     .big
         padding: 17px 53px
         margin-top: 50px
-    @media ( max-width: 576px )
+    @media (min-width: 250px) and ( max-width: 992px )    
+        background-color: #f7faf9ff
+    @media (min-width: 250px) and ( max-width: 576px )
         .media
             display: flex
             flex-direction: column

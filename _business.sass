@@ -26,9 +26,20 @@
                 h2
                     &:hover
                         cursor: pointer
-    @media ( max-width: 990px )
+    @media (min-width: 576px) and ( max-width: 992px )
         .box
+            min-height: 40vh
             margin-top: 20px
             .textbox
                 h1
                     font-size: 35px
+    @media (min-width: 300px) and ( max-width: 576px )
+        .box
+            min-height: 25vh
+            margin-top: 20px
+            .textbox
+                h1
+                    font-size: 35px
+                .btn
+                    padding: 5px 20px
+                    font-size: 18px
